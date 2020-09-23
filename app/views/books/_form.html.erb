@@ -1,42 +1,45 @@
 <%= form_with(model: book, local: true) do |form| %>
   <% if book.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
-
-      <ul>
-        <% book.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+    <div class="message is-warning">
+      <div class="message-header">
+        <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+      </div>
+      <div class="message is-body">
+        <ul>
+          <% book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
     </div>
   <% end %>
-
+  
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.label :title, class: "label"%>
+    <%= form.text_field :title, class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
+    <%= form.label :author, class: "label" %>
+    <%= form.text_field :author, class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :pages %>
-    <%= form.number_field :pages %>
+    <%= form.label :pages, class: "label" %>
+    <%= form.number_field :pages, class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :pages_read %>
-    <%= form.number_field :pages_read %>
+    <%= form.label :pages_read, class: "label" %>
+    <%= form.number_field :pages_read, class: "input" %>
   </div>
 
   <div class="field">
-    <%= form.label :resume %>
-    <%= form.text_area :resume %>
+    <%= form.label :resume, class: "label" %>
+    <%= form.text_area :resume, class: "textarea", placeholder:"Escreva um resumo...", rows:"10"%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "button is-success"%>
   </div>
 <% end %>

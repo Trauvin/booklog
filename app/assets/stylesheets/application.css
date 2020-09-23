@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
-* {
-    width: 940;
-}
 
 #navbarMenuHeroA {
     padding: 10px;
