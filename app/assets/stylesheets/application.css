@@ -17,3 +17,18 @@
 #navbarMenuHeroA {
     padding: 10px;
 }
+
+/* Alinha todos os cards, três por "linha" */
+#container {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+
+#title {
+    background-color: #393b41;
+    color: #fff;
+    justify-content: center;
+}

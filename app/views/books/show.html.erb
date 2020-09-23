@@ -1,29 +1,30 @@
-<p id="notice"><%= notice %></p>
+<%= content_for :title do %>
+  <%= @book.title %> - <%= @book.author %>
+<% end %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
+<div class="columns mt-6 is-centered">
+  <div class="column is-one-third">
+    <div class="panel-control">
+      <strong>Páginas:</strong>
+      <%= @book.pages %>
+    </div>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
+    <div class="panel-control">
+      <strong>Páginas lidas:</strong>
+      <%= @book.pages_read %>
+    </div>
 
-<p>
-  <strong>Pages:</strong>
-  <%= @book.pages %>
-</p>
+    <div class="panel-control"> 
+      <strong>Resumo:</strong>
+      <%= @book.resume %>
+    </div><br>
 
-<p>
-  <strong>Pages read:</strong>
-  <%= @book.pages_read %>
-</p>
+    <%= link_to 'Editar', edit_book_path(@book), class: "button is-link is-light" %>
+    <%= link_to 'Excluir', book_path(@book), 
+        method: :delete, date: {confirm: "Você tem certeza?"}, 
+        class: "button is-danger is-light"%>
+  </div>
+</div>
 
-<p>
-  <strong>Resume:</strong>
-  <%= @book.resume %>
-</p>
 
-<%= link_to 'Editar', edit_book_path(@book) %> |
-<%= link_to 'Mostrar', books_path %>
+

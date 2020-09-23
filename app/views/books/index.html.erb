@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<div class="columns mt-6 is-centered">
+<div id="container" class="columns mt-6 is-centered i">
   <% @books.each do |book| %>
-    <div class="column is-one-quarter">
+    <div class="column is-one-fifths">
       <div class="card">
-        <header class="card-header">
-          <%= book.title %></td>
+        <header id="title" class="card-header">
+          <h1 class="has-text-weight-bold"><%= book.title %></h1>
         </header>
         <div class="card-content">
           <div class="content">
@@ -16,9 +16,9 @@
           </div>
         </div>
         <div class="card-footer">
-          <%= link_to 'Mostrar', book, class: "card-footer-item" %>
-          <%= link_to 'Editar', edit_book_path(book), class: "card-footer-item" %>
-          <%= link_to 'Excluir', book, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item" %>
+          <%= link_to 'Mostrar', book, class: "card-footer-item button is-primary is-light" %>
+          <%= link_to 'Editar', edit_book_path(book), class: "card-footer-item button is-link is-light"  %>
+          <%= link_to 'Excluir', book, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item button is-danger is-light" %>
         </div>
       </div>
     </div>
