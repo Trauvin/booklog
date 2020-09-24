@@ -1,5 +1,9 @@
-<p id="notice"><%= notice %></p>
-
+<%
+=begin%>
+ <p id="notice"><%= notice %></p> 
+<%
+=end%>
+<%= render 'layouts/flash_message' %>
 <div id="container" class="columns mt-6 is-centered i">
   <% @books.each do |book| %>
     <div class="column is-one-fifths">

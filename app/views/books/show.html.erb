@@ -18,12 +18,16 @@
       <strong>Resumo:</strong>
       <%= @book.resume %>
     </div><br>
-
+    <div id="back_button" class="button is-white">
+      << <%= link_to 'Voltar', books_path %>
+    </div>
     <%= link_to 'Editar', edit_book_path(@book), class: "button is-link is-light" %>
     <%= link_to 'Excluir', book_path(@book), 
         method: :delete, date: {confirm: "Você tem certeza?"}, 
         class: "button is-danger is-light"%>
   </div>
+  
+  
 </div>
 
 

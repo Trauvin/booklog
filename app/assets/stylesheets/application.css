@@ -32,3 +32,8 @@
     color: #fff;
     justify-content: center;
 }
+
+#back_button {
+    margin-top: 40px;
+    margin-right: 70px;
+}

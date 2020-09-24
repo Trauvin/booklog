@@ -1,6 +1,10 @@
-<h1>Editing Book</h1>
+<div class="columns is-centered mt-6">
+    <div class="column is-one-third">
+        <h1 class="is-size-2 has-text-weight-bold mb-3">Editar Review</h1>
+        <%= render 'form', book: @book %>
+    <div>
+</div>
 
-<%= render 'form', book: @book %>
+<%= link_to "<< Voltar", books_path %> |
+<%= link_to "Mostrar", @book %> 
 
-<%= link_to "Mostrar", @book %> |
-<%= link_to "Voltar", books_path %>
