@@ -17,7 +17,10 @@ And next:
 ```bash
  yarn install
  ```
- 
+ Run migrate:
+ ```bash
+ rails db:migrate
+ ```
  And finally, if everything is in compliance:
  ```bash
  rails s
