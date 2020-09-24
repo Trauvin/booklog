@@ -20,5 +20,8 @@ And next:
  yarn install
  ```
  
- 
+ And finally, if everything is in compliance:
+ ```bash
+ rails s
+ ```
  
