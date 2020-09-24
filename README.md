@@ -1,24 +1,39 @@
-# README
+# BookLog 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A book review registration app. Create smart summaries, and save notes from the book you're reading!
 
-Things you may want to cover:
+# Requirements
 
-* Ruby version
+[ruby](https://www.ruby-lang.org/en/) v2.7.1
+ 
+[rails](https://rubyonrails.org/) v6.0.0.3
 
-* System dependencies
+[nodejs](https://nodejs.org/en/)
 
-* Configuration
+[yarn](https://yarnpkg.com/getting-started/install)
 
-* Database creation
 
-* Database initialization
+# Setup
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Clone the repository and entry the folder:
+```bash
+ git clone https://github.com/Trauvin/booklog.git
+ cd booklog
+ ```
+ Inside the folder  run the bundler to download the dependencies:
+ ```bash
+ bundler install
+```
+And next:
+```bash
+ yarn install
+ ```
+ Run migrate:
+ ```bash
+ rails db:migrate
+ ```
+ And finally, if everything is in compliance:
+ ```bash
+ rails s
+ ```
+ 
