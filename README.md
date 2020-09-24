@@ -1,5 +1,3 @@
-# README
-
 # BookLog 
 
 A book review registration app. Create smart summaries, and save notes from the book you're reading!
