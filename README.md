@@ -6,7 +6,7 @@ A book review registration app. Create smart summaries, and save notes from the 
 
 [ruby](https://www.ruby-lang.org/en/) v2.7.1
  
-[rails](https://rubyonrails.org/) v6.0.03
+[rails](https://rubyonrails.org/) v6.0.0.3
 
 [nodejs](https://nodejs.org/en/)
 
