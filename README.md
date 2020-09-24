@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# BookLog 
 
-Things you may want to cover:
+A book review registration app. Create smart summaries, and save notes from the book you're reading!
 
-* Ruby version
+# Setup
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Clone the repository and entry the folder:
+```bash
+ git clone https://github.com/Trauvin/booklog.git
+ cd booklog
+ ```
+ Inside the folder  run the bundler to download the dependencies:
+ ```bash
+ bundler install
+```
+And next:
+```bash
+ yarn install
+ ```
+ 
+ 
+ 
